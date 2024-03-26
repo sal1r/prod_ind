@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.activities.CreateNoteActivity"
+        android:background="@drawable/primary_background_rounded_top">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/name_field"
+                style="@style/textFieldStyle"
+                android:id="@+id/tilName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorLink="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:singleLine="true" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="192dp"
+                android:hint="@string/description_field"
+                style="@style/textFieldStyle"
+                android:id="@+id/tilText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorLink="@color/black"
+                    android:textColorHighlight="@color/white"
+                    android:singleLine="false" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/buttonStyle"
+                android:text="@string/create"
+                android:id="@+id/bCreate" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

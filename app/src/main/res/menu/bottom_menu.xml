@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/iHome"
+            android:icon="@android:drawable/ic_dialog_dialer"
+            android:title="@string/main_page" />
+
+    <item
+            android:id="@+id/iMyLeisure"
+            android:icon="@android:drawable/ic_dialog_map"
+            android:title="@string/my_leisure_page" />
+
+    <item
+            android:id="@+id/iProfile"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/my_profile_page" />
+</menu>

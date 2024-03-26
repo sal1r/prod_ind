@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.fragments.ProfilePageFragment">
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/profile_welcome_screen"
+            android:id="@+id/clWelcomeScreen"
+            android:visibility="visible" />
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/profile_login_screen"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:id="@+id/clLoginScreen" />
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/profile_reg_screen"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:id="@+id/clRegScreen" />
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/profile_message_screen"
+            android:visibility="gone"
+            tools:visibility="gone"
+            android:id="@+id/clMessageScreen" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageButton
+                android:src="@android:drawable/ic_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ibBackButton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/button_shape"
+                android:tint="@color/white"
+                tools:visibility="visible"
+                android:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

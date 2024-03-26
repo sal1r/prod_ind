@@ -1,3 +1,31 @@
 <resources>
     <string name="app_name">LifestyleHUB</string>
+    <string name="temp">%1$s°С</string>
+    <string name="min_temp">от %1$s°С</string>
+    <string name="max_temp">до %1$s°С</string>
+    <string name="feels_temp">Ощущается как %1$s°С</string>
+    <string name="not_load_image">изображение</string>
+    <string name="dot">\ •\ </string>
+    <string name="no_location_permission">Невозможно получить данные\nОтсутсвует разрешение на работу геолокации</string>
+    <string name="location_disabled">Невозможно получить данные\nСлужба геолокации отключена</string>
+    <string name="main_page">Главная</string>
+    <string name="my_leisure_page">Мой досуг</string>
+    <string name="my_profile_page">Профиль</string>
+    <string name="no_places_near">Места поблизости не найдены</string>
+    <string name="contacts">Контакты</string>
+    <string name="register">Регистрация</string>
+    <string name="login">Вход</string>
+    <string name="reg_success">Регистрация прошла успешно</string>
+    <string name="reg_fail">Пользователь с таким именем уже существует</string>
+    <string name="enter_success">Вы успешно вошли в аккаунт</string>
+    <string name="enter_fail">Пароль или логин введены неверно</string>
+    <string name="register_button">Зарегистрироваться</string>
+    <string name="enter_button">Войти</string>
+    <string name="login_field">Логин</string>
+    <string name="password_field">Пароль</string>
+    <string name="confirm_password_field">Подтвердите пароль</string>
+    <string name="reg_passwords_dont_match">Пароли не совпадают</string>
+    <string name="name_field">Имя</string>
+    <string name="description_field">Описание</string>
+    <string name="create">Создать</string>
 </resources>

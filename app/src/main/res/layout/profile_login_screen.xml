@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/primary_background_rounded_top">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="284dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                style="@style/textFieldStyle"
+                android:id="@+id/tilLogin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/login_field"
+                    android:textColor="@color/white"
+                    android:textColorHighlight="@color/black"
+                    android:textColorLink="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                style="@style/textFieldStyle"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/white"
+                android:id="@+id/tilPassword">
+
+            <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/password_field"
+                    android:textColor="@color/white"
+                    android:password="true"
+                    android:textColorHighlight="@color/black"
+                    android:textColorLink="@color/white" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="24dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+                android:text="@string/enter_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bLogin"
+                style="@style/buttonStyle" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

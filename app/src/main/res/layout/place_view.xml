@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/primary_background_rounded"
+        android:layout_marginBottom="16dp">
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:id="@+id/ivImage"
+            android:layout_weight="0"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/not_load_image" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvName"
+            android:layout_weight="0"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            tools:text="Мега ГРИНН"
+            android:layout_marginHorizontal="12dp"
+            android:includeFontPadding="false" />
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvAddress"
+            android:layout_weight="0"
+            android:textSize="12sp"
+            android:textColor="@color/seconderyText"
+            tools:text="Кромское ш., 4"
+            android:includeFontPadding="false"
+            android:layout_marginStart="12dp" />
+
+</LinearLayout>

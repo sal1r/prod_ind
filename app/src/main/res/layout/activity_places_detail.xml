@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".views.activities.PlacesDetailActivity"
+        android:orientation="vertical" >
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            tools:srcCompat="@tools:sample/backgrounds/scenic"
+            android:id="@+id/ivMainImage"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/not_load_image"
+            android:layout_marginHorizontal="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            tools:itemCount="5"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="horizontal"
+            tools:listitem="@layout/place_additional_image"
+            android:layout_marginTop="8dp"
+            android:id="@+id/rvOtherImages"
+            android:layout_marginHorizontal="16dp">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/primary_background_rounded"
+            android:padding="16dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvName"
+                tools:text="Мега ГРИНН"
+                android:textSize="16sp"
+                android:includeFontPadding="false" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvAddress"
+                tools:text="Кромское ш., 4, Орёл"
+                android:textSize="12sp"
+                android:includeFontPadding="false"
+                android:textColor="@color/seconderyText" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvCategories"
+                tools:text="Категория 1\nКатегория 2"
+                android:layout_marginTop="32dp"
+                android:includeFontPadding="false" />
+
+        <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvContacts"
+                    android:text="@string/contacts"
+                    android:includeFontPadding="false"
+                    android:layout_weight="1" />
+
+            <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    app:srcCompat="@android:drawable/ic_input_add"
+                    android:id="@+id/bAdd"
+                    android:background="@drawable/button_shape"
+                    android:tint="@color/white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -2,4 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transperent">#00000000</color>
+    <color name="forecastBackgroundColor1">#CAE5F3</color>
+    <color name="forecastBackgroundColor2">#8AC4E6</color>
+    <color name="placeBackground1">#B3E6FF</color>
+    <color name="placeBackground2">#99C2FF</color>
+    <color name="seconderyText">#292929</color>
+    <color name="bottomNavigationBackground">#222426</color>
+    <color name="background">#2E3033</color>
+    <color name="bottomNavigationSelected">#FFFFFF</color>
+    <color name="bottomNavigationUnSelected">#666666</color>
+    <color name="button_background">#5469F3</color>
+    <color name="textColorHint">#D9D9D9</color>
 </resources>
